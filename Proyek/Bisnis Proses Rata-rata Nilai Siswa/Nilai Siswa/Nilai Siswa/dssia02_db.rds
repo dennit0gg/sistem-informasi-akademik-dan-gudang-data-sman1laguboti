@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="dssia02_db">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=LAPTOP-7SLNOL26;Initial Catalog=sia02_db</ConnectString>
+    <IntegratedSecurity>true</IntegratedSecurity>
+    <Prompt>Specify a user name and password for data source dssia02_db</Prompt>
+  </ConnectionProperties>
+  <DataSourceID>5919f9d2-6156-41b7-a7bf-a94942026dab</DataSourceID>
+</RptDataSource>

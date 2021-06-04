@@ -1,0 +1,853 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="a7e24365-985b-45cb-8f01-be3b81052580" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Nilai Siswa Cube</ID>
+  <Name>Nilai Siswa Cube</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="22" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="5949" scrolltop="980" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="19385" y="11659" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900180380100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="tugas" left="6676" top="6223" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3792" height="3651" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000d00e0000430e0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_tugas" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="siswa" left="14790" top="11881" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="3000" height="3651" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000b80b0000430e0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_siswa" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="guru" left="22684" top="10686" logicalid="3" controlid="3" masterid="0" hint1="0" hint2="0" width="3000" height="3651" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000b80b0000430e0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_guru" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="submissions" left="7143" top="11615" logicalid="4" controlid="4" masterid="0" hint1="0" hint2="0" width="3052" height="3298" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000ec0b0000e20c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_submissions" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="jurusan" left="22559" top="7526" logicalid="5" controlid="5" masterid="0" hint1="0" hint2="0" width="3000" height="1535" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000b80b0000ff050000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_jurusan" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="mata_pelajaran" left="7255" top="1435" logicalid="6" controlid="6" masterid="0" hint1="0" hint2="0" width="3016" height="1887" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000c80b00005f070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_mata_pelajaran" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="nilai_siswa_fact" left="14473" top="5929" logicalid="7" controlid="7" masterid="0" hint1="0" hint2="0" width="3052" height="4357" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000ec0b000005110000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_nilai_siswa_fact" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="semester" left="15243" top="1324" logicalid="8" controlid="8" masterid="0" hint1="0" hint2="0" width="3016" height="1887" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000c80b00005f070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_semester" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="kelas" left="22119" top="1499" logicalid="9" controlid="9" masterid="0" hint1="0" hint2="0" width="3000" height="1535" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000b80b0000ff050000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_kelas" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="7264" top="2823" logicalid="10" controlid="10" masterid="0" hint1="0" hint2="0" width="2708" height="3700" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__tugas__mata_pela__45F365D3]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="1" sourceattachpoint="1" destattachpoint="10" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="7663" y="3322" />
+              <point x="7663" y="5231" />
+              <point x="9672" y="5231" />
+              <point x="9672" y="6223" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="7623" top="9375" logicalid="11" controlid="11" masterid="0" hint1="0" hint2="0" width="1896" height="2540" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__submissio__tugas__4CA06362]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="4" sourceattachpoint="5" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="8022" y="9874" />
+              <point x="8022" y="10980" />
+              <point x="9219" y="10980" />
+              <point x="9219" y="11615" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="10168" top="7099" logicalid="12" controlid="12" masterid="0" hint1="0" hint2="0" width="4605" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__nilai_sis__id_tu__6EF57B66]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="7" sourceattachpoint="19" destattachpoint="14" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="10468" y="7498" />
+              <point x="11315" y="7498" />
+              <point x="11315" y="7400" />
+              <point x="12040" y="7400" />
+              <point x="12040" y="7557" />
+              <point x="14473" y="7557" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="9895" top="13857" logicalid="13" controlid="13" masterid="0" hint1="0" hint2="0" width="5195" height="807" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__submissio__siswa__4D94879B]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="4" sourceattachpoint="18" destattachpoint="19" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="14790" y="14256" />
+              <point x="12493" y="14256" />
+              <point x="12493" y="14364" />
+              <point x="10195" y="14364" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="15149" top="9986" logicalid="14" controlid="14" masterid="0" hint1="0" hint2="0" width="991" height="2395" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__nilai_siswa__nis__693CA210]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="7" sourceattachpoint="2" destattachpoint="3" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="15740" y="11881" />
+              <point x="15740" y="11084" />
+              <point x="15449" y="11084" />
+              <point x="15449" y="10286" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="17225" top="9457" logicalid="15" controlid="15" masterid="0" hint1="0" hint2="0" width="5759" height="3454" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__nilai_sis__id_gu__6A30C649]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="7" sourceattachpoint="16" destattachpoint="23" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="22684" y="12511" />
+              <point x="21387" y="12511" />
+              <point x="21387" y="9757" />
+              <point x="17525" y="9757" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="9895" top="8907" logicalid="16" controlid="16" masterid="0" hint1="0" hint2="0" width="4878" height="4207" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__nilai_sis__id_su__6FE99F9F]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="7" sourceattachpoint="13" destattachpoint="20" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="10195" y="12714" />
+              <point x="13969" y="12714" />
+              <point x="13969" y="9207" />
+              <point x="14473" y="9207" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="17225" top="6707" logicalid="17" controlid="17" masterid="0" hint1="0" hint2="0" width="5634" height="1436" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__nilai_sis__kode___6D0D32F4]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="5" destid="7" sourceattachpoint="10" destattachpoint="13" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="22559" y="7743" />
+              <point x="21489" y="7743" />
+              <point x="21489" y="7007" />
+              <point x="17525" y="7007" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="9971" top="1528" logicalid="18" controlid="18" masterid="0" hint1="0" hint2="0" width="5572" height="1139" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__mata_pela__semes__2A4B4B5E]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="8" destid="6" sourceattachpoint="12" destattachpoint="11" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="15243" y="2267" />
+              <point x="13839" y="2267" />
+              <point x="13839" y="1828" />
+              <point x="10271" y="1828" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="9971" top="2529" logicalid="19" controlid="19" masterid="0" hint1="0" hint2="0" width="4802" height="4228" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__nilai_sis__kode___6B24EA82]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="7" sourceattachpoint="15" destattachpoint="10" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="10271" y="2928" />
+              <point x="12804" y="2928" />
+              <point x="12804" y="6457" />
+              <point x="14473" y="6457" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="17225" top="2417" logicalid="20" controlid="20" masterid="0" hint1="0" hint2="0" width="5194" height="4340" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__nilai_sis__id_ke__6E01572D]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="9" destid="7" sourceattachpoint="14" destattachpoint="11" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="22119" y="2816" />
+              <point x="19388" y="2816" />
+              <point x="19388" y="6457" />
+              <point x="17525" y="6457" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="15699" top="2712" logicalid="21" controlid="21" masterid="0" hint1="0" hint2="0" width="902" height="3517" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__nilai_sis__kode___6C190EBB]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="8" destid="7" sourceattachpoint="3" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="16201" y="3211" />
+              <point x="16201" y="4405" />
+              <point x="15999" y="4405" />
+              <point x="15999" y="5929" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>5949</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>980</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>6676</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>1324</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>75</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="d1e9c6a5-68d7-4cd5-9631-4a7832233777">
+      <ID>Jurusan</ID>
+      <Name>Jurusan</Name>
+      <DimensionID>Jurusan</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="d1f05521-7fca-4d49-a05e-6ca09ce24caa">
+          <AttributeID>Kode Jurusan</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="5ce7a946-12f6-43b8-af91-79ff2f20929f">
+      <ID>Mata Pelajaran</ID>
+      <Name>Mata Pelajaran</Name>
+      <DimensionID>Mata Pelajaran</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="21580cfa-d38a-4ff0-b9d9-49015c442a18">
+          <AttributeID>Kode Mapel</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3af300ae-e45c-430e-a227-36fea0baea95">
+          <AttributeID>Semester Kode</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="2368c96d-15fe-4970-b94d-cac4b3bc12d9">
+      <ID>Guru</ID>
+      <Name>Guru</Name>
+      <DimensionID>Guru</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="43b038dc-c808-47f1-9c24-fdb809516ad5">
+          <AttributeID>Id Guru</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="82edac38-1d08-470d-accb-6ff300f0dcc6">
+      <ID>Id Tugas</ID>
+      <Name>Id Tugas</Name>
+      <DimensionID>Tugas</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="3521bb7f-3a7d-4736-9d55-3c5ac033e82c">
+          <AttributeID>Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="55c8ea01-23d0-4140-82b7-164de3f91041">
+          <AttributeID>Mata Pelajaran Kode</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="0a4b7320-cf7e-4762-b668-28cf6aaf16f0">
+      <ID>Semester</ID>
+      <Name>Semester</Name>
+      <DimensionID>Semester</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="7e0f4759-e157-41b2-b9e4-7c1cf56d9cae">
+          <AttributeID>Kode Semester</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="813236be-a012-4c7a-9ace-8ef40f2c9c81">
+      <ID>Siswa</ID>
+      <Name>Siswa</Name>
+      <DimensionID>Siswa</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="1d5fc796-52a8-460b-9c5f-0099ca7cb972">
+          <AttributeID>Nis</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="ba3ff31e-6807-4091-827a-4d17bf32d2a2">
+      <ID>Mata Pelajaran - Semester Kode</ID>
+      <Name>Mata Pelajaran - Semester Kode</Name>
+      <DimensionID>Semester</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="13de972b-2b2d-4ab2-b9ad-2afa79dc98d7">
+          <AttributeID>Kode Semester</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="a8b102f5-6d4b-409c-ba88-34c276302559">
+      <ID>Id Tugas - Mata Pelajaran Kode</ID>
+      <Name>Id Tugas - Mata Pelajaran Kode</Name>
+      <DimensionID>Mata Pelajaran</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="6e3cbe96-a9af-4c25-be2d-65db4a9592d2">
+          <AttributeID>Kode Mapel</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e5d0fe08-e618-4143-820d-d2484670b94d">
+          <AttributeID>Semester Kode</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="ab3b3397-f125-4b95-9118-e3fddac70eab">
+      <ID>Id Tugas - Mata Pelajaran Kode - Semester Kode</ID>
+      <Name>Id Tugas - Mata Pelajaran Kode - Semester Kode</Name>
+      <DimensionID>Semester</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="1597b1a9-80ba-4332-82c4-d26fa5ffc8b9">
+          <AttributeID>Kode Semester</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="75af353c-411e-4b94-bdb3-06689b713a75">
+      <ID>Id Submissions - Siswanis</ID>
+      <Name>Id Submissions - Siswanis</Name>
+      <DimensionID>Siswa</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="8a9187f8-4806-4bfe-96b9-2ecefa9453d7">
+          <AttributeID>Nis</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="bd6088b4-bd79-4b20-bd0c-87030e218979">
+      <ID>Id Submissions - Tugasid</ID>
+      <Name>Id Submissions - Tugasid</Name>
+      <DimensionID>Tugas</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="4ee42a86-9196-4208-ad65-91c4bc83a7de">
+          <AttributeID>Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e0bcc97d-652d-4aaa-ad74-d2f6a95052ae">
+          <AttributeID>Mata Pelajaran Kode</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="fbe29402-67c3-434d-b6a5-eda72a569b3c">
+      <ID>Id Submissions - Tugasid - Mata Pelajaran Kode</ID>
+      <Name>Id Submissions - Tugasid - Mata Pelajaran Kode</Name>
+      <DimensionID>Mata Pelajaran</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="4ce3d67d-9294-426a-af1e-8ec6b1e44dd7">
+          <AttributeID>Kode Mapel</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="903721e1-b236-4027-adab-9d88f7ec9ee1">
+          <AttributeID>Semester Kode</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="583af79e-5c48-429d-9048-31a7c454985e">
+      <ID>Id Submissions - Tugasid - Mata Pelajaran Kode - Semester Kode</ID>
+      <Name>Id Submissions - Tugasid - Mata Pelajaran Kode - Semester Kode</Name>
+      <DimensionID>Semester</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="cb36b812-429f-49d0-bfd3-3ab6c257d5aa">
+          <AttributeID>Kode Semester</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="99d87aa3-3cb3-4659-b8fd-44cabd8367d6">
+      <ID>Submissions</ID>
+      <Name>Submissions</Name>
+      <DimensionID>Submissions</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="6c3103d7-458b-499e-ba37-3b16d07dbfca">
+          <AttributeID>Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d452252a-d0b3-4595-9b75-b2cb190c6ba2">
+          <AttributeID>Siswanis</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8b120e9c-8c1b-440d-bc18-a29b44d18e46">
+          <AttributeID>Tugasid</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="908a2b3d-4d1c-4c21-9002-499d529b039a">
+      <ID>Kelas</ID>
+      <Name>Kelas</Name>
+      <DimensionID>Kelas</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="62b53bc9-8fe8-4625-bbe7-c045b90e173d">
+          <AttributeID>Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="aeab1d28-df81-4536-9949-d0b5c5414a88">
+      <ID>Nilai Siswa Fact</ID>
+      <Name>Nilai Siswa Fact</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="ab4f0fb7-8d2a-4b56-88e9-9f6d9785a54c">
+          <ID>Ratarata Nilai</ID>
+          <Name>Ratarata Nilai</Name>
+          <Source dwd:design-time-name="5af83fab-15da-4555-886f-6e7485db171f">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="11b3646c-872f-4e05-9e97-6d48c601dddd">
+              <TableID>dbo_nilai_siswa_fact</TableID>
+              <ColumnID>ratarata_nilai</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="b120149c-b819-4e29-b311-37dfd3fabb2f">
+          <ID>Nilai Siswa Fact Count</ID>
+          <Name>Nilai Siswa Fact Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="48b94369-1083-4565-b2a3-320bfc60c624">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="75b589b9-446b-4acd-889d-67f0aaf7154f">
+              <TableID>dbo_nilai_siswa_fact</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="231a5e80-6b6e-46c9-a408-9b40b4348f44">
+          <CubeDimensionID>Jurusan</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="cc7aa285-ab56-4012-a7ff-f22a138031ba">
+              <AttributeID>Kode Jurusan</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="59dcd36c-3eb2-46c6-8688-288b083eb938">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b1fe307c-85bd-427d-a9fa-d3f2d0a7b630">
+                    <TableID>dbo_nilai_siswa_fact</TableID>
+                    <ColumnID>kode_jurusan</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="0e3fa8dc-a507-4b16-8d51-91c37a06dd4b">
+          <CubeDimensionID>Mata Pelajaran</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="652c5894-98e8-4b62-8112-8e645f0e61fb">
+              <AttributeID>Kode Mapel</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ba37ea35-f67e-4c25-8ef0-0c8d181c69c6">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6ffb0526-5d55-4f63-bf75-cb0e27656269">
+                    <TableID>dbo_nilai_siswa_fact</TableID>
+                    <ColumnID>kode_mapel</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="cf707259-025f-4a4c-8f33-27c8b0684ed2">
+          <CubeDimensionID>Guru</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="2f538801-e954-4a87-b1d9-31c9a17b4b10">
+              <AttributeID>Id Guru</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="797d0ad1-4782-4595-b8e1-17c2229fe0ab">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="06e8afb0-fee0-4cd4-a412-4cd2feea85ef">
+                    <TableID>dbo_nilai_siswa_fact</TableID>
+                    <ColumnID>id_guru</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="6e09dd25-79ff-42de-9a40-d9cb23f37b07">
+          <CubeDimensionID>Id Tugas</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="3fe0589e-4375-4360-b474-166b6961ac63">
+              <AttributeID>Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="37b23375-6dc5-461d-b872-c33d9ad1c6fe">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c325880e-68e3-46a3-b000-e9265d27ebc2">
+                    <TableID>dbo_nilai_siswa_fact</TableID>
+                    <ColumnID>id_tugas</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b03a1209-f938-42c0-8f0d-831c2199aaca">
+          <CubeDimensionID>Submissions</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d4448ecb-8c3b-4dc3-a43a-511ba64cf768">
+              <AttributeID>Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="e152fc13-7fad-4b86-9363-fc6ed92132f5">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="13e9c2ef-c6b1-4b13-b936-61d4c8db2a58">
+                    <TableID>dbo_nilai_siswa_fact</TableID>
+                    <ColumnID>id_submissions</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e915ad54-c9ec-4c9a-a6d0-3daa008f7d50">
+          <CubeDimensionID>Kelas</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1442886d-f6df-44af-9bc4-6aed3d67846b">
+              <AttributeID>Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="e4f1a8a0-314c-4471-a0ed-57444e2d557d">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="536a0800-56b1-4f29-8192-7235f0082e9d">
+                    <TableID>dbo_nilai_siswa_fact</TableID>
+                    <ColumnID>id_kelas</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="60dd1e60-1765-4827-8063-4ff3d600b5ff">
+          <CubeDimensionID>Semester</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="8f7ca699-459b-4038-9ef3-3669c17b766a">
+              <AttributeID>Kode Semester</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a58a5b41-7349-48b8-abaa-844c5bf08c37">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="fd18da29-1ff8-4360-852e-1980c6d318c3">
+                    <TableID>dbo_nilai_siswa_fact</TableID>
+                    <ColumnID>kode_semester</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e5f56f2b-7297-4f96-bc91-6f4c9736008e">
+          <CubeDimensionID>Siswa</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d5cddf9d-ca06-4ade-aa91-a325d3262659">
+              <AttributeID>Nis</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5fe00d11-f3f2-4341-a77b-abf304030903">
+                  <DataType>WChar</DataType>
+                  <DataSize>4</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="fcd80c90-7fd4-4b2b-92b0-a5c04589b218">
+                    <TableID>dbo_nilai_siswa_fact</TableID>
+                    <ColumnID>nis</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="67972493-fc70-425a-8837-f629a135f5b1">
+          <CubeDimensionID>Mata Pelajaran - Semester Kode</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="64f1cf38-bce7-41ef-a7b2-6278cd7e7b54">
+              <AttributeID>Kode Semester</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Mata Pelajaran</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Semester Kode</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="79e2f5ac-68bd-48b4-8971-1e11ba526209">
+          <CubeDimensionID>Id Tugas - Mata Pelajaran Kode</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="975a1849-1d0d-48fa-960f-08a5c8239112">
+              <AttributeID>Kode Mapel</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Id Tugas</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Mata Pelajaran Kode</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="5b0e1f45-70a5-47b2-bd22-ed2706ac2668">
+          <CubeDimensionID>Id Tugas - Mata Pelajaran Kode - Semester Kode</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="93fb9fd4-6f93-46dd-a89a-b8608b4799df">
+              <AttributeID>Kode Semester</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Id Tugas - Mata Pelajaran Kode</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Semester Kode</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="efbed597-fd49-48fa-9542-1547ac66cc67">
+          <CubeDimensionID>Id Submissions - Siswanis</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b36038c7-dc10-4763-83e5-5042105f0af4">
+              <AttributeID>Nis</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Submissions</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Siswanis</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="4e444fc8-4a2a-4ecd-8d61-27a6f0319c06">
+          <CubeDimensionID>Id Submissions - Tugasid</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="39e7ed57-5cf6-49c1-a0a3-cf0bffcc00ab">
+              <AttributeID>Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Submissions</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Tugasid</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="b70591b3-cf2e-4d93-96c4-4f48cd2d097e">
+          <CubeDimensionID>Id Submissions - Tugasid - Mata Pelajaran Kode</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="50fc9d5b-44de-45c1-8c76-8c05af53c5ad">
+              <AttributeID>Kode Mapel</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Id Submissions - Tugasid</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Mata Pelajaran Kode</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="4bc56aa0-097c-4d2c-a041-afcdcda56981">
+          <CubeDimensionID>Id Submissions - Tugasid - Mata Pelajaran Kode - Semester Kode</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="89ddbf7c-77ca-4bf8-837d-53e732bc3d7f">
+              <AttributeID>Kode Semester</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Id Submissions - Tugasid - Mata Pelajaran Kode</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Semester Kode</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="fd1a8f4c-ca92-4ea4-b994-2f135cecb419">
+    <DataSourceViewID>Sia02 Db</DataSourceViewID>
+  </Source>
+</Cube>
