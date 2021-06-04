@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "Pengguna Teregistrasi", "Pengguna Teregistrasi\Pengguna Teregistrasi.rptproj", "{DB73EDA7-3948-4677-9FD4-EB0F0414A1C9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB73EDA7-3948-4677-9FD4-EB0F0414A1C9}.Debug|Default.ActiveCfg = Debug
+		{DB73EDA7-3948-4677-9FD4-EB0F0414A1C9}.Debug|Default.Build.0 = Debug
+		{DB73EDA7-3948-4677-9FD4-EB0F0414A1C9}.Debug|Default.Deploy.0 = Debug
+		{DB73EDA7-3948-4677-9FD4-EB0F0414A1C9}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{DB73EDA7-3948-4677-9FD4-EB0F0414A1C9}.DebugLocal|Default.Build.0 = DebugLocal
+		{DB73EDA7-3948-4677-9FD4-EB0F0414A1C9}.Release|Default.ActiveCfg = Release
+		{DB73EDA7-3948-4677-9FD4-EB0F0414A1C9}.Release|Default.Build.0 = Release
+		{DB73EDA7-3948-4677-9FD4-EB0F0414A1C9}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
